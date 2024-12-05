@@ -1,0 +1,61 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Photo Editor</h1>
+        <input type="file" id="imageInput" accept="image/*" />
+        <div class="image-container">
+            <img src="placeholder.jpg" alt="Image" id="previewImage" />
+        </div>
+        <div class="controls">
+            <div>
+            <label for="brightness">
+                Brightness:
+            </label>
+            <input type="range" id="brightness" min="0" max="200" value="100" />
+            <br />
+            <label for="contrast">
+                Contrast:
+            </label>
+            <input type="range" id="contrast" min="0" max="200" value="100" />
+            <br />
+            <label for="grayscale">
+                Grayscale:
+            </label>
+            <input type="range" id="grayscale" min="0" max="100" value="0" />
+            <br />
+        </div>
+            <div>
+            <label for="blur">
+                Blur:
+            </label>
+            <input type="range" id="blur" min="0" max="10" value="0" />
+            <br />
+            <label for="sepia">
+                Sepia:
+            </label>
+            <input type="range" id="sepia" min="0" max="100" value="0" />
+            <br />
+            <label for="hue">
+                Hue Rotation:
+            </label>
+            <input type="range" id="hue" min="0" max="360" value="0" />
+            <br />
+        </div>
+            <button id="reset">Reset</button>
+            <button id="save">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
